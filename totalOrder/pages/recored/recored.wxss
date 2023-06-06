@@ -1,0 +1,12 @@
+.header{height: 43vh;background-color: rgb(255, 190, 71);display: flex;justify-content: center;align-items: center;}
+.header>image{border-radius: 50%;width: 30vw;height: 20vh;border: 13rpx solid rgb(224, 224, 224);}
+
+.content{height: 7vh;text-align: center;}
+.content>text{font-size: 35rpx;line-height: 7vh;}
+
+.footer{background-color: rgb(243, 243, 243);height: 50vh;}
+
+.recoredfooter{display: flex;justify-content: space-between;align-items: center;height: 150rpx;border-bottom: 3rpx solid rgb(221, 221, 221);}
+.recoredfooter>view{margin: 0 20rpx;}
+.recoredfooter .timestyle{color: rgb(109, 109, 109);}
+.recoredfooter>view:last-child{color: orange;}

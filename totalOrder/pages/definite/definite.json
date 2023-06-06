@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "确定订单",
+  "usingComponents":{
+    "my-detail":"/components/my-detail/my-detail"
+  }
+}

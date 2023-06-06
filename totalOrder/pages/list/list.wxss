@@ -1,0 +1,12 @@
+.content{display: flex;height: 150rpx;border-bottom: 3rpx solid rgb(212, 212, 212);}
+.content>view:first-child{flex: 1;align-self: center;line-height: 60rpx;}
+.content>view:last-child{align-self: center;}
+
+.leftlight{font-size: 30rpx;color: rgb(109, 109, 109);}
+.leftweight{color: rgb(0, 0, 0);}
+
+.right{display: flex;justify-content: space-between;}
+.right>view:first-child{background-color: transparent;border: 3rpx solid orange;color: rgb(255, 60, 60);width: 140rpx;height: 55rpx;line-height: 55rpx;margin-right: 15rpx;}
+.right>view:last-child{height: 65rpx;line-height: 65rpx;width: 120rpx;}
+.nofood{background-color: rgb(204, 204, 204);color: rgb(85, 85, 85);}
+.yesfood{background-color: orange;color: rgb(255, 255, 255);}

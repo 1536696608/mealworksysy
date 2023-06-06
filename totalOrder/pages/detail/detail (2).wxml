@@ -1,0 +1,33 @@
+<view class="header">
+  <view>
+    <view class="headertop">取餐号</view>
+  </view>
+  <view>
+    <view class="headerright">
+      <view><text style="font-size:50rpx;">{{detailmessage.meunnumber}}\n</text><text
+          class="remarksstyle">备注：{{remarks}}</text></view>
+      <view>饮品制作中...
+        <icon class="iconfont icon-smile" />
+      </view>
+    </view>
+  </view>
+</view>
+<my-detail class="content" definitedata="{{detaillist}}" definitegoods="{{detailgoods}}" />
+
+<view style="margin-top:30rpx;">
+  <view class="prefooter">
+    <view><text class="prefont">订单信息： </text>{{detailmessage.orderinfo}}</view>
+  </view>
+  <view class="prefooter">
+    <view><text class="prefont">订单号码： </text>{{detailmessage.ordernum}}</view>
+  </view>
+  <view class="prefooter">
+    <view><text class="prefont">订单时间： </text>{{detailmessage.ordertime}}</view>
+  </view>
+</view>
+
+<view class="footer">
+  <view>
+    <text>请凭此画面至取餐柜台领取饮料</text>
+  </view>
+</view>

@@ -1,0 +1,19 @@
+page{background-color: rgb(235, 235, 235);}
+
+.header{margin: 20rpx 40rpx;display: flex;height: 200rpx;}
+.header>view:first-child{background-color: rgb(255, 99, 27);width: 80rpx;height: 200rpx;}
+.headertop{font-size: 30rpx;color: rgb(255, 255, 255);width: 40rpx;height:150rpx;text-align: center;line-height: 50rpx;margin: 25rpx 20rpx;}
+.header>view:last-child{flex: 1;background-color: rgb(255, 237, 203);height: 200rpx;}
+.headerright{display: flex;flex-direction: column;height: 100%;margin: 0 30rpx;}
+.headerright>view:first-child{flex: 1;margin-top: 25rpx;}
+.headerright>view:last-child{font-size: 25rpx;color: rgb(121, 121, 121);margin: 10rpx 0;}
+
+
+
+.remarksstyle{color: rgb(158, 158, 158);font-size: 30rpx;}
+.prefooter{display: flex;justify-content: flex-start;height: 90rpx;border-bottom: 2rpx solid rgb(116, 116, 116);align-items: center;padding-left: 20rpx}
+.prefont{color: rgb(158, 158, 158);font-size: 30rpx;}
+
+
+.footer{background-color: orange;color: rgb(255, 255, 255);font-size: 40rpx;margin:30rpx 60rpx;text-align: center;}
+.footer>view{padding: 10rpx 0rpx;}

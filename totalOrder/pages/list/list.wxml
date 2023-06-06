@@ -1,0 +1,21 @@
+<view style="margin:20rpx 20rpx;">
+  <view wx:for="{{listmessage}}" class="content">
+    <view>
+      <view>
+        <text class="leftlight">花费￥{{item.amount}}.00
+          <text class="leftweight">订单号：{{item.userOrder}}\t</text> 
+        </text>
+      </view>
+    </view>
+    <view>
+      <view class="right">
+        <view>
+          <view style="font-size:25rpx;text-align:center;" bindtap="getdetail" data-payid = "{{item.userOrder}}">查看详情</view>
+        </view>
+        <view wx:if="{{item.complete === 0 ? 'true' : ''}}" class="nofood"><view style="font-size:30rpx;text-align:center;">未取餐</view></view>
+        <view wx:if="{{item.complete === 1 ? 'true' : ''}}" class="yesfood"><view style="font-size:30rpx;text-align:center;">已取餐</view></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view style="text-align:center;">到底啦~</view>

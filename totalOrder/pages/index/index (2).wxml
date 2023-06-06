@@ -1,0 +1,21 @@
+<block wx:for="{{indexmessage}}" wx:for-item="inneritem">
+  <scroll-view scroll-y style="height:100vh">
+    <swiper indicator-dots autoplay circular class="index1">
+      <swiper-item wx:for="{{inneritem.imgUrls}}" wx:key="{{item.id}}">
+        <image src="{{item.src}}" style="width:100vw"/>
+      </swiper-item>
+    </swiper>
+
+    <view class="index2">
+      <view bind:tap="onOrder">开启点餐之旅--></view>
+      <image src="{{inneritem.image_ad}}" style="width:100%; margin:30rpx 0;height:350rpx"/>
+      <view>
+        <view class="index3">
+          <block wx:for="{{inneritem.image_bottom}}" wx:key="{{item.id}}">
+            <image src="{{item.src}}"/>
+          </block>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</block>

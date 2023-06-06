@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.demo.dao.OrdersDao">
+
+    <resultMap type="io.renren.modules.demo.entity.OrdersEntity" id="ordersMap">
+        <result property="orderId" column="order_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="menuId" column="menu_id"/>
+        <result property="restaurantId" column="restaurant_id"/>
+        <result property="orderDate" column="order_date"/>
+        <result property="quantity" column="quantity"/>
+        <result property="userOrder" column="user_order"/>
+        <result property="price" column="price"/>
+    </resultMap>
+
+
+</mapper>

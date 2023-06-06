@@ -1,0 +1,46 @@
+.menu{display: flex;flex-direction: column;height: 100vh;}
+
+.menu>view:first-child{background-color: #fcfcce;}
+.text-class{font-size: 30rpx;color: rgb(170, 170, 170);text-align: center;line-height: 5vh;}
+.text-class>text{padding:5rpx 10rpx;background-color: red; color: rgb(241, 241, 241);}
+
+/*菜单的样式*/
+.menu>.menu1{flex: 1;}
+
+.menu-layout{display: flex;height: 82vh;}
+.menu-layout>view:last-child{flex: 1;}
+
+.left-layout{border-bottom: 3rpx dotted rgb(87, 87, 87); background-color: rgb(235, 235, 235);width: 200rpx;height: 90rpx;}
+.left-text{text-align: center;line-height: 90rpx;}
+.active{border-left:10rpx solid rgb(250, 161, 28);background-color: rgb(255, 255, 255);}
+
+.food-circle{border-bottom:3rpx solid rgb(223, 221, 221);}
+.food-class{display: flex;height: 120rpx;margin: 20rpx 20rpx;}
+.food-class text{flex: 1;line-height: 50rpx;}
+.food-class>view{line-height: 150rpx;}
+
+/*这里是底部的样式*/
+.footer-view{background-color: rgb(255, 203, 134);}
+.footer-layout{display: flex;height: 10vh;}
+.footer-layout>view:first-child{flex: 1;}
+
+.footer-left{display: flex;height: 10vh;align-items: center;background-color: rgb(66, 66, 66);}
+.footer-left icon{margin: 0 15rpx 0 20rpx;}
+.footer-left>view{flex: 1;color: rgb(167, 164, 164);}
+
+.footer-right{background-color: rgb(233, 231, 231);width: 25vw;font-size: 35rpx;}
+.bg-select{background-color: rgb(255, 219, 100);}
+.footer-right>view{text-align: center;line-height: 10vh;color: rgb(133, 133, 133);}
+
+.shop{color: rgb(255, 219, 100);}
+.gdcount{width: 40rpx;height: 40rpx;position: fixed;left: 10vw;top: 91vh;text-align: center;line-height: 40rpx;background-color: red;border-radius: 50%;}
+.gdcounttext{color: #fff;font-size: 30rpx;}
+.shoptext{color: rgb(114, 114, 114);font-size: 35rpx;}
+.shopnum{color: rgb(255, 255, 255);font-size: 40rpx;}
+.bg-select>view{color: rgb(129, 129, 129);}
+
+
+/*这里是展开的购物车的组件的样式*/
+.cpn1{position: fixed;top: 20vh;left: 0vw;height: 50vh;width: 100vw;background-color: rgba(119, 119, 119, 0.342);}
+
+

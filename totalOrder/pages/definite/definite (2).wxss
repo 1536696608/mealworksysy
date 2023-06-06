@@ -1,0 +1,13 @@
+page{background-color: rgb(233, 233, 233);}
+.header{margin: 0 0 20rpx 0;padding:10rpx 0 10rpx 10rpx;font-size: 30rpx;background-color: rgb(255, 255, 255);}
+
+.content{background-color: rgb(185, 32, 32);}
+
+.scrollfooter{padding: 20rpx 20rpx;margin-top:20rpx;background-color: rgb(255, 255, 255);}
+.remark{font-size: 30rpx;color: rgb(109, 109, 109);}
+.remarks{width: 100%;height: 200rpx;font-size: 30rpx;background-color: rgb(235, 235, 235);}
+
+
+.footer{display: flex;justify-content: space-between;height: 10vh;}
+.footer>view:first-child{flex: 1;background-color: rgb(61, 61, 61);color: rgb(255, 255, 255);font-size: 40rpx;line-height: 10vh;padding-left: 30rpx;}
+.footer>view:last-child{background-color: orange;color: rgb(255, 255, 255);font-size: 40rpx;width: 25vw;line-height: 10vh;text-align: center;}

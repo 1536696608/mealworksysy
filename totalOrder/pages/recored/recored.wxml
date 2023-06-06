@@ -1,0 +1,17 @@
+<view class="header">
+  <navigator url="/pages/login/login">
+    
+    <image src="https://bpic.588ku.com/element_origin_min_pic/19/04/09/26f0a0315af239047eae26a04157690a.jpg" style="height:25vh;width: 25vh;"/>
+    <view style="text-align: center;">登录</view>
+  </navigator>
+  
+</view>
+<view class="content"><text>消费记录</text></view>
+<view class="footer">
+  <scroll-view scroll-y="true" style="height:50vh">
+    <view wx:for="{{recoredarray}}" wx:key="{{item.record_id}}" class="recoredfooter">
+      <view>消费<text class="timestyle">\n{{item.date}} {{item.time}}</text></view>
+      <view><text>￥{{item.summoney}}</text></view>
+    </view>
+  </scroll-view>
+</view>

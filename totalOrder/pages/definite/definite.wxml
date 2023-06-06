@@ -1,0 +1,16 @@
+<view style="height:90vh">
+  <view class="header"><text>请确认您的订单</text></view>
+  <scroll-view scroll-y="true" style="height:84vh">
+    <my-detail class="content" definitedata="{{surelist}}" definitegoods="{{suregoods}}" />
+    <view class="scrollfooter">
+      <text class="remark">备注</text>
+      <textarea placeholder="如有其他要求，请输入备注" placeholder-class="placestyle" class="remarks" bind:blur="handleRemark"></textarea>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 这里是底部的栏 -->
+<view class="footer">
+  <view><text>合计：</text> ￥{{suregoods}}.00</view>
+  <view bind:tap="handleDetail"><text>去支付</text></view>
+</view>

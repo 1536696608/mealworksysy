@@ -1,0 +1,25 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/menu/menu",
+    "pages/definite/definite",
+    "pages/detail/detail",
+    "pages/list/list",
+    "pages/recored/recored",
+    "pages/login/login"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#EAAD5A",
+    "navigationBarTitleText": "每天三餐",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {"pagePath": "pages/index/index","text": "首页","iconPath": "/icon/首页.png","selectedIconPath": "/icon/首页1.png"},
+      {"pagePath": "pages/list/list","text": "订单","iconPath": "/icon/订单.png","selectedIconPath": "/icon/订单1.png"},
+      {"pagePath":"pages/recored/recored","text": "我的","iconPath": "/icon/我的.png","selectedIconPath": "/icon/我的1.png"}
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

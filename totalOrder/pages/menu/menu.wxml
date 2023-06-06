@@ -1,0 +1,70 @@
+<view class="menu">
+  <!--顶部的提示-->
+  <view style="height:5vh;width:100vw;">
+    <view class="text-class"><text>减</text> 满50减10元在线支付专享）</view>
+  </view>
+  <!--菜单栏-->
+  <view class="menu1">
+    <view class="menu-layout">
+      <view>
+        <scroll-view scroll-y style="height: 82vh;">
+          <view wx:for="{{resData}}" wx:for-item="leftmenu" class="left-layout {{isleft===index ? 'active' : ''}}"
+            bind:tap="orderJump" data-list="{{index}}">
+            <view class="left-text">{{leftmenu.name}}</view>
+          </view>
+        </scroll-view>
+      </view>
+      <view>
+        <scroll-view scroll-into-view="{{menuindex}}" scroll-y style="height: 82vh;">
+          <!-- <view wx:for="{{listData}}" wx:for-item="rightmenu" wx:for-index="rightindex" id="a{{rightindex}}">
+            <view style="background:rgb(243, 242, 242);font-size:25rpx;margin-left:30rpx;color:orange;">
+              {{rightmenu.dishName}}</view> -->
+              <view>
+                <image src="{{resData[isleft].url}}" 
+                style="height:340rpx;width:540rpx"></image>
+              </view>
+              <view style="text-align: right;font-size: small;color: crimson;">地址：{{resData[isleft].address}}</view>
+              <view style="text-align: right; font-size: small;color: crimson;">电话：{{resData[isleft].phone}}</view>
+            <view wx:for="{{nowmenu}}" class="food-circle" wx:key="{{index}}">
+              
+              <view class="food-class">
+                <image src="{{item.url}}" style="height:120rpx;width:120rpx" />
+                <text>{{item.dishName}}\n <text
+                    style="color:red;margin-top:20rpx;">￥{{item.price}}.00</text></text>
+                <view>
+                  <icon class="iconfont icon-jiahao" style="height: 50rpx;line-height: 50rpx;" bind:tap="increaseShop" data-listfun="{{rightindex}}"
+                    data-foodsfun="{{index}}" />
+                </view>
+              </view>
+            </view>
+          <!-- </view> -->
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <!--底部的购物栏-->
+  <view class="footer-view">
+    <view style="font-size:25rpx;color:white;text-align:center;">
+      <text wx:if="{{isgoods===0}}">满25立减3元(手机点餐专享)</text>
+      <text wx:elif="{{0 < isgoods && isgoods < 25}}">满25立减3元，还差{{25-isgoods}}元，去凑单-></text>
+      <text wx:else>下单立减3元</text>
+    </view>
+  </view>
+  <view>
+    <view class="footer-layout">
+      <view>
+        <view class="footer-left">
+          <icon class="iconfont icon-shop {{isgoods ? 'shop' : ''}}" bind:tap="{{isgoods ? 'handleCpn' : ''}}" />
+          <view wx:if="{{isgoods}}" class="gdcount" bind:tap="{{isgoods ? 'handleCpn' : ''}}"><text class="gdcounttext">{{count}}</text></view>
+          <text wx:if="{{isgoods===0}}" class="shoptext">购物车是空的</text>
+          <text wx:if="{{isgoods > 0}}" class="shopnum">￥{{isgoods}}.00</text>
+        </view>
+      </view>
+      <view class="footer-right {{isgoods ? 'bg-select' : ''}}" bind:tap="{{isgoods ? 'handleDefinite' : ''}}">
+        <view>选好了</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<my-shop wx:if="{{iscpn}}" cpnlist="{{translist}}" bind:pagecompleteCancle="handleDelete" bind:pagehandleAdd="handleAdd" bind:pagehandleReduce="handleReduce"/>

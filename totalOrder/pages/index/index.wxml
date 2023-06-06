@@ -1,0 +1,19 @@
+<block >
+  <scroll-view scroll-y style="height:100vh">
+    <swiper indicator-dots autoplay circular class="index1" >
+      <swiper-item wx:for="{{listData.content}}">
+        <image src="{{item.url}}"  style="width:100vw"/>
+      </swiper-item>
+    </swiper>
+    <view class="index2">
+    <view bind:tap="onOrder">开启点餐之旅--></view>
+      <view class="index3">
+          <view wx:for="{{resData}}" >
+            <image src="{{item.url}}"/>
+            <view >{{item.name}}</view>
+          </view>
+      </view>
+    </view>
+ 
+  </scroll-view>
+</block>
